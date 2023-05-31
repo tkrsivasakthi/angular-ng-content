@@ -1,0 +1,9 @@
+<h3>HEROES component</h3>
+<div>
+  <ng-content select=".top"></ng-content>
+  <ul class="list-group" *ngFor="let mbl of products">
+    <li class="list-group-item disabled">{{ mbl.id }}</li>
+    <li class="list-group-item">{{ mbl.name }}</li>
+  </ul>
+  <ng-content select=".bottom"></ng-content>
+</div>
